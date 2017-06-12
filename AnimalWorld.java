@@ -29,5 +29,7 @@ public class AnimalWorld extends World
             b.setImage( smoke[i] );
             
         }
+        
+        removeObject(b);
     }
 }
