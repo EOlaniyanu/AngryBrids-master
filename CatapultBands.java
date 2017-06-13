@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.awt.Color;
 /**
  * Write a description of class CatapultBands here.
  * 
@@ -8,11 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class CatapultBands extends Actor
 {
-    private GreenfootImage elasticRect1 = new GreenfootImage( 2, 1 );
+    private GreenfootImage elasticRect1 = new GreenfootImage( 45, 15 );
     
     
     public CatapultBands()
     {
+        elasticRect1.setColor(Color.BLACK);
+        elasticRect1.fillRect(0, 0, 45, 15);
         setImage(elasticRect1);
     }
     
@@ -24,5 +26,12 @@ public class CatapultBands extends Actor
     public void act() 
     {
         // Add your action code here.
-    }    
+        
+        updateElastic();
+    }
+    
+    public void updateElastic()
+    {
+        
+    }
 }
