@@ -13,6 +13,12 @@ public class Birds extends Actor
     private int speedY;
     private int GRAVITY = -1;
     
+    
+    public Birds()
+    {
+        
+    }
+    
     /**
      * Act - do whatever the Birds wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

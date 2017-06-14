@@ -10,9 +10,10 @@ public class CatapultBands extends Actor
 {
     private GreenfootImage elasticRect1 = new GreenfootImage( 45, 15 );
     
-    AnimalWorld aWorld = (AnimalWorld)getWorld();
+    AnimalWorld aWorld;
     public CatapultBands()
     {
+        
         elasticRect1.setColor(Color.BLACK);
         elasticRect1.fillRect(0, 0, 45, 15);
         setImage(elasticRect1);
@@ -26,7 +27,7 @@ public class CatapultBands extends Actor
     public void act() 
     {
         // Add your action code here.
-        
+        aWorld = (AnimalWorld)getWorld();
         updateElastic();
     }
     

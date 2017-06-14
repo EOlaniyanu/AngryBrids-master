@@ -13,8 +13,10 @@ public class AnimalWorld extends World
     
     
     
-    private int xElastic = 70;
-    private int yElastic = 320;
+    private int xElastic;
+    private int yElastic;
+    
+    private Birds[] birds = { new RedBird(), new BlackBird(), new BlueBird(), new YellowBird()};
     
     /**
      * Constructor for objects of class MyWorld.
@@ -31,6 +33,7 @@ public class AnimalWorld extends World
     {
         addObject( new Catapult(), 80, 355);
         addObject( new CatapultBands(), 70, 320);
+        addObject( birds[Greenfoot.getRandomNumber(4)], 60, 320);
     }
     
     public void poof( BuildingBlocks b )
@@ -54,7 +57,7 @@ public class AnimalWorld extends World
         
         
         
-        if( Greenfoot.mousePressed(this))
+        while( Greenfoot.mousePressed(this))
         {
             MouseInfo mi = Greenfoot.getMouseInfo();
             
@@ -68,7 +71,7 @@ public class AnimalWorld extends World
                 xElastic = 70;
             }
             
-            if( mi.getY() > catapult.getImage().getHeight())
+            if( mi.getY() > (catapult.getY() - ( (catapult.getImage().getHeight()) / 2)))
             {
                 yElastic = ( catapult.getY() - ( (catapult.getImage().getHeight()) / 2) + mi.getY() )/2;
             }
@@ -76,6 +79,13 @@ public class AnimalWorld extends World
             {
                 yElastic = ( catapult.getY() - (catapult.getImage().getHeight()/2) );
             }
+            
+            // if ( Greenfoot.mouseClicked(this))
+            // {    
+                // projectileMove();
+            // }
+            
+            
         }
          
         
@@ -89,6 +99,14 @@ public class AnimalWorld extends World
     public int getYElastic()
     {
         return yElastic;
+    }
+    
+    public void projectileMove()
+    {
+        if( Greenfoot.mouseClicked(this))
+        {
+            
+        }
     }
     
     public void act()
