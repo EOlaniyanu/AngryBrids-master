@@ -10,7 +10,7 @@ public class CatapultBands extends Actor
 {
     private GreenfootImage elasticRect1 = new GreenfootImage( 45, 15 );
     
-    
+    AnimalWorld aWorld = (AnimalWorld)getWorld();
     public CatapultBands()
     {
         elasticRect1.setColor(Color.BLACK);
@@ -32,6 +32,6 @@ public class CatapultBands extends Actor
     
     public void updateElastic()
     {
-        
+        setLocation( aWorld.getXElastic(), aWorld.getYElastic() );
     }
 }
