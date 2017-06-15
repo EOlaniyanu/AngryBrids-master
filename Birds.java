@@ -9,14 +9,46 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Birds extends Actor
 {
     private boolean fired = false;
-    private int speedX;
-    private int speedY;
-    private int GRAVITY = -1;
+    private double exactX;
+    private double exactY;
+    private double speedX;
+    private double speedY;
+    private static final double GRAVITY = 0.5;
     
     
     public Birds()
     {
         
+    }
+    
+    public void setLocation( int x, int y)
+    {
+        exactX = x;
+        exactY = y;
+        super.setLocation( x, y);
+    }
+    
+    public void setLocation( double x, double y)
+    {
+        exactX = x;
+        exactY = y;
+        super.setLocation( (int) x , (int) y);
+    }
+    
+    public double getExactX()
+    {
+        return exactX;
+    }
+    
+    public double getExactY()
+    {
+        return exactY;
+    }
+    
+    public void fired( double velX, double velY)
+    {
+        speedX = velX;
+        speedY = velY;
     }
     
     /**
@@ -25,26 +57,33 @@ public class Birds extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-        if ( fired == true ) 
+        
+        AnimalWorld aWorld = (AnimalWorld)getWorld();
+        
+        if ( aWorld.getFired() == true ) 
         {
+            
             ballistics();
         }
     }
     
     public void ballistics()
     {
-        setLocation( getX() + speedX, getY());
+        // setLocation( getX() + speedX, getY());
         
-        if( speedY > 0 )
-        {
-            speedY += GRAVITY;
-        }
-        else
-        {
-            speedY = -1;
-        }
+        speedY -= GRAVITY;
         
-        setLocation( getX(), getY() + speedY );
+        setLocation( getExactX() + speedX, getExactY() - speedY);
+        
+        // // if( speedY > 0 )
+        // // {
+            // // speedY += GRAVITY;
+        // // }
+        // // else
+        // // {
+            // // speedY = -1;
+        // // }
+        
+        // setLocation( getX(), getY() + speedY );
     }
 }

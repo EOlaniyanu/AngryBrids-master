@@ -11,12 +11,20 @@ public class AnimalWorld extends World
 
     private GreenfootImage[] smoke = { new GreenfootImage("smoke_frame_0.png"), new GreenfootImage("smoke_frame_1.png"), new GreenfootImage("smoke_frame_2.png"), new GreenfootImage("smoke_frame_3.png"), new GreenfootImage("smoke_frame_4.png") };
     
-    
+    private boolean birdFired = false;
     
     private int xElastic;
     private int yElastic;
     
+    private int deltaX;
+    private int deltaY;
+    
+    private int birdSpeedX = 1;
+    private int birdSpeedY = 1;
+    
     private Birds[] birds = { new RedBird(), new BlackBird(), new BlueBird(), new YellowBird()};
+    
+    private int GRAVITY = -1;
     
     /**
      * Constructor for objects of class MyWorld.
@@ -57,7 +65,9 @@ public class AnimalWorld extends World
         
         
         
-        while( Greenfoot.mousePressed(this))
+        
+        
+        if( Greenfoot.mousePressed(this))
         {
             MouseInfo mi = Greenfoot.getMouseInfo();
             
@@ -80,15 +90,18 @@ public class AnimalWorld extends World
                 yElastic = ( catapult.getY() - (catapult.getImage().getHeight()/2) );
             }
             
-            // if ( Greenfoot.mouseClicked(this))
-            // {    
-                // projectileMove();
-            // }
+            
             
             
         }
-         
+       
         
+        
+        if ( Greenfoot.mouseClicked(this))
+        {    
+            birdFired = true;
+            getFired();
+        }
     }
     
     public int getXElastic()
@@ -96,17 +109,26 @@ public class AnimalWorld extends World
         return xElastic;
     }
     
+    
+    
     public int getYElastic()
     {
         return yElastic;
     }
     
-    public void projectileMove()
+    public boolean getFired()
     {
-        if( Greenfoot.mouseClicked(this))
-        {
-            
-        }
+        return birdFired;
+    }
+    
+    public int getSpeedX()
+    {
+        return birdSpeedX;
+    }
+    
+    public int getSpeedY()
+    {
+        return birdSpeedY;
     }
     
     public void act()
