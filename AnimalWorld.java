@@ -19,12 +19,13 @@ public class AnimalWorld extends World
     private int deltaX;
     private int deltaY;
     
-    private int birdSpeedX = 1;
-    private int birdSpeedY = 1;
+    private double velX = 1.0;
+    private double velY = 1.0;
     
     private Birds[] birds = { new RedBird(), new BlackBird(), new BlueBird(), new YellowBird()};
     
-    private int GRAVITY = -1;
+    
+    
     
     /**
      * Constructor for objects of class MyWorld.
@@ -44,6 +45,11 @@ public class AnimalWorld extends World
         addObject( birds[Greenfoot.getRandomNumber(4)], 60, 320);
     }
     
+    public void act()
+    {
+        fire();
+    }
+    
     public void poof( BuildingBlocks b )
     {
         for( int i = 0; i < smoke.length; i++)
@@ -60,40 +66,39 @@ public class AnimalWorld extends World
         CatapultBands elastic = (CatapultBands)getObjects(CatapultBands.class).get(0);
         Catapult catapult = (Catapult)getObjects(Catapult.class).get(0); 
         
-        xElastic = elastic.getX();
-        yElastic = elastic.getY();
+        // xElastic = elastic.getX();
+        // yElastic = elastic.getY();
         
         
         
         
         
-        if( Greenfoot.mousePressed(this))
+        
+        MouseInfo mi = Greenfoot.getMouseInfo();
+            
+            
+        if( mi.getX() < catapult.getX())
         {
-            MouseInfo mi = Greenfoot.getMouseInfo();
-            
-            
-            if( mi.getX() < catapult.getX())
-            {
-                xElastic = ( catapult.getX() + mi.getX() )/2;
-            }
-            else
-            {
-                xElastic = 70;
-            }
-            
-            if( mi.getY() > (catapult.getY() - ( (catapult.getImage().getHeight()) / 2)))
-            {
-                yElastic = ( catapult.getY() - ( (catapult.getImage().getHeight()) / 2) + mi.getY() )/2;
-            }
-            else
-            {
-                yElastic = ( catapult.getY() - (catapult.getImage().getHeight()/2) );
-            }
-            
-            
-            
-            
+             xElastic = ( catapult.getX() + mi.getX() )/2;
         }
+        else
+        {
+             xElastic = 70;
+        }
+            
+        if( mi.getY() > (catapult.getY() - ( (catapult.getImage().getHeight()) / 2)))
+        {
+             yElastic = ( catapult.getY() - ( (catapult.getImage().getHeight()) / 2) + mi.getY() )/2;
+        }
+        else
+        {
+             yElastic = ( catapult.getY() - (catapult.getImage().getHeight()/2) );
+        }
+            
+            
+            
+            
+        
        
         
         
@@ -121,18 +126,15 @@ public class AnimalWorld extends World
         return birdFired;
     }
     
-    public int getSpeedX()
+    public double getVelX()
     {
-        return birdSpeedX;
+         return velX;
     }
     
-    public int getSpeedY()
+    public double getVelY()
     {
-        return birdSpeedY;
+         return velY;
     }
     
-    public void act()
-    {
-        fire();
-    }
+    
 }    

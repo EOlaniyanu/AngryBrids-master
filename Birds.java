@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Birds extends Actor
 {
-    private boolean fired = false;
+    private boolean fired = true;
     private double exactX;
     private double exactY;
     private double speedX;
@@ -60,11 +60,17 @@ public class Birds extends Actor
         
         AnimalWorld aWorld = (AnimalWorld)getWorld();
         
-        if ( aWorld.getFired() == true ) 
+        if ( aWorld.getFired() ) 
         {
-            
+            calcVel(aWorld);
             ballistics();
+            
         }
+    }
+    
+    public void calcVel(AnimalWorld currentWorld)
+    {
+        fired( currentWorld.getVelX(), currentWorld.getVelY());
     }
     
     public void ballistics()
@@ -75,15 +81,15 @@ public class Birds extends Actor
         
         setLocation( getExactX() + speedX, getExactY() - speedY);
         
-        // // if( speedY > 0 )
-        // // {
-            // // speedY += GRAVITY;
-        // // }
-        // // else
-        // // {
-            // // speedY = -1;
-        // // }
+        //  if( speedY > 0 )
+        //  {
+            //  speedY += GRAVITY;
+        //  }
+        //  else
+        //  {
+            //  speedY = -1;
+        // }
         
-        // setLocation( getX(), getY() + speedY );
+        
     }
 }
