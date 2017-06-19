@@ -24,5 +24,17 @@ public class RedBird extends Birds
     public void act() 
     {
         // Add your action code here.
+        AnimalWorld aWorld = (AnimalWorld)getWorld();
+        
+        if ( aWorld.getFired() ) 
+        {
+            if( freeFall == false)
+            {
+                calcVel(aWorld);
+                
+            }    
+            ballistics();
+            
+        }
     }    
 }

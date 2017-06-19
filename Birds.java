@@ -13,8 +13,8 @@ public class Birds extends Actor
     private double exactY;
     private double speedX;
     private double speedY;
-    private static final double GRAVITY = 0.5;
-    
+    private static final double GRAVITY = 0.2;
+    public boolean freeFall = false;
     
     public Birds()
     {
@@ -58,19 +58,20 @@ public class Birds extends Actor
     public void act() 
     {
         
-        AnimalWorld aWorld = (AnimalWorld)getWorld();
+        // AnimalWorld aWorld = (AnimalWorld)getWorld();
         
-        if ( aWorld.getFired() ) 
-        {
-            calcVel(aWorld);
-            ballistics();
+        // if ( aWorld.getFired() ) 
+        // {
+            // calcVel(aWorld);
+            // ballistics();
             
-        }
+        // }
     }
     
     public void calcVel(AnimalWorld currentWorld)
     {
         fired( currentWorld.getVelX(), currentWorld.getVelY());
+        freeFall = true;
     }
     
     public void ballistics()
