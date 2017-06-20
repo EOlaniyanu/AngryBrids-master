@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class BuildingBlocks extends Actor
 {
-    private int health;
+    public double health;
+    public double maxHealth;
     
     /**
      * Act - do whatever the BuildingBlocks wants to do. This method is called whenever
@@ -25,20 +26,22 @@ public class BuildingBlocks extends Actor
         
     }
     
-    public void setHealth( int h )
+    public void setHealth( double h )
     {
         health = h;
+        maxHealth = h;
     }
     
-    public void checkCollisions(int damage)
+    public void hit( double damage)
     {
         
         
-        health += damage;
+        health -= damage;
         
-        if( health <= 0 ) 
-        {
-            //(AnimalWorld)getWorld().poof(this);
-        }
+        // if( health <= 0 ) 
+        // {
+            // health = 0;
+            // aWorld.poof(this);
+        // }
     }
 }

@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class Birds here.
  * 
@@ -15,6 +15,7 @@ public class Birds extends Actor
     private double speedY;
     private static final double GRAVITY = 0.2;
     public boolean freeFall = false;
+    private double DAMAGE;
     
     public Birds()
     {
@@ -33,6 +34,11 @@ public class Birds extends Actor
         exactX = x;
         exactY = y;
         super.setLocation( (int) x , (int) y);
+    }
+    
+    public void setDamage( double d)
+    {
+         DAMAGE = d;
     }
     
     public double getExactX()
@@ -68,7 +74,7 @@ public class Birds extends Actor
         // }
     }
     
-    public void calcVel(AnimalWorld currentWorld)
+    public void calcVel(CatapultBands currentWorld)
     {
         fired( currentWorld.getVelX(), currentWorld.getVelY());
         freeFall = true;
@@ -92,5 +98,22 @@ public class Birds extends Actor
         // }
         
         
+    }
+    
+    public void checkCollisions()
+    {
+        AnimalWorld aWorld = (AnimalWorld)getWorld();
+        double impactVel = Math.sqrt( (speedX * speedX) + (speedY * speedY));
+        
+        List<BuildingBlocks> allObstacles = getIntersectingObjects(BuildingBlocks.class);
+        
+        
+        
+        for( int i = 0; i < allObstacles.size(); i++)
+        {
+            allObstacles.get(i).hit( DAMAGE * impactVel ); 
+            speedX = -2.0;
+            aWorld.poof(this);
+        }
     }
 }

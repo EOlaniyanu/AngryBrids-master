@@ -9,8 +9,15 @@ import java.awt.Color;
 public class CatapultBands extends Actor
 {
     private GreenfootImage elasticRect1 = new GreenfootImage( 45, 15 );
+    private int length = 45;
+    private int rotation = 0;
+    private double velX = 2.0;
+    private double velY = 2.0;
     
-    AnimalWorld aWorld;
+    
+    // AnimalWorld aWorld;
+    
+    Catapult catapult;
     public CatapultBands()
     {
         
@@ -27,12 +34,36 @@ public class CatapultBands extends Actor
     public void act() 
     {
         // Add your action code here.
-        aWorld = (AnimalWorld)getWorld();
+        // aWorld = (AnimalWorld)getWorld();
+        catapult = (Catapult)getWorld().getObjects(Catapult.class).get(0);
+        calcSpeed();
         updateElastic();
     }
     
     public void updateElastic()
     {
-        setLocation( aWorld.getXElastic(), aWorld.getYElastic() );
+        length = (int)catapult.getLength();
+        rotation = (int)catapult.getRectRotation();
+        setLocation( catapult.getXElastic(), catapult.getYElastic() );
+        elasticRect1.scale( length, 15);
+        setRotation(rotation);
     }
+    
+    public void calcSpeed()
+    {
+        velX = (catapult.getDeltaX() * 0.2);
+        velY = (catapult.getDeltaY() * 0.2);
+        
+    }
+    
+    public double getVelX()
+    { 
+        return velX;
+    }
+    
+    public double getVelY()
+    {
+         return velY;
+    }
+    
 }

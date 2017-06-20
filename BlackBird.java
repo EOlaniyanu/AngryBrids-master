@@ -9,12 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BlackBird extends Birds
 {
     private GreenfootImage blackBird = new GreenfootImage("BlackBird.png");
-    
+    public double DAMAGE = 50;
     public BlackBird()
     {
         blackBird.scale( 30, 30);
         setImage(blackBird);
-        
+        setDamage(DAMAGE);
     }
     
     /**
@@ -26,18 +26,20 @@ public class BlackBird extends Birds
         // Add your action code here.
         
         AnimalWorld aWorld = (AnimalWorld)getWorld();
-        
-        if ( aWorld.getFired() ) 
+        Catapult catapult = (Catapult)getWorld().getObjects(Catapult.class).get(0);
+        CatapultBands elastic = (CatapultBands)aWorld.getObjects(CatapultBands.class).get(0);
+        if ( catapult.getFired() ) 
         {
             
             if( freeFall == false)
             {
-                calcVel(aWorld);
+                calcVel(elastic);
                 
             }    
             ballistics();
             
         }
         
+        checkCollisions();
     }    
 }
