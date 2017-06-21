@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Pig
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pig\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=king
+comment1.target=Pig(boolean)
+comment1.text=\r\n\ Pig\ sets\ the\ image\ of\ the\ pig\ object\ based\ on\ the\ boolean\ parameter\r\n\ \r\n\ @param\ king\ tells\ the\ computer\ whether\ the\ image\ for\ the\ pig\ should\ be\ the\ king\ Image\ or\ the\ lackey\ Image\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.params=x\ y
+comment2.target=void\ setLocation(int,\ int)
+comment2.text=\r\n\ setLocation\ sets\ the\ location\ of\ the\ bird\ to\ the\ given\ parameters\r\n\ \r\n\ @param\ x\ is\ the\ given\ x\ location\ of\ the\ bird\r\n\ @param\ y\ is\ the\ given\ y\ location\ of\ the\ bird\ \r\n\ @return\ Nothing\ is\ returned\r\n
+comment3.params=x\ y
+comment3.target=void\ setLocation(double,\ double)
+comment3.text=\r\n\ setLocation\ overides\ the\ setLocation\ of\ greenfoot\ to\ allow\ for\ the\ use\ of\ double\ values\ in\ the\ method\r\n\ \r\n\ @param\ x\ is\ the\ given\ x\ location\ of\ the\ bird\r\n\ @param\ y\ is\ the\ given\ y\ location\ of\ the\ bird\ \r\n\ @return\ Nothing\ is\ returned\r\n
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\r\n\ Act\ -\ do\ whatever\ the\ Pig\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment5.params=
+comment5.target=void\ fall()
+comment5.text=\r\n\ fall\ causes\ the\ Hero\ to\ fall\ when\ he\ jumps\ or\ moves\ up\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment6.params=damage
+comment6.target=void\ hit(double)
+numComments=7

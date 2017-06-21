@@ -29,13 +29,13 @@ public class Wood extends BuildingBlocks
         {
             square = true;
             setImage( woodSquare[0] );
-            setHealth(15);
+            setHealth(10);
         }
         else 
         {
             square = false;
             setImage( woodRect[0] );
-            setHealth(10);
+            setHealth(15);
         }
 
     }
@@ -89,7 +89,6 @@ public class Wood extends BuildingBlocks
             }
             else if( health < 15 )
             {
-
                 setImage( woodRect[1]);
             }
             else if( health <= (maxHealth * 0.50) )

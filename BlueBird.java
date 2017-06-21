@@ -9,7 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BlueBird extends Birds
 {
     private GreenfootImage blueBird = new GreenfootImage("BlueBird.png");
-    public double DAMAGE = 0.5;
+    private double DAMAGE = 0.5;
+    
+    /**
+     * BlueBird sets the damage and image of the bird and scales it to the right size.
+     */
     public BlueBird()
     {
         blueBird.scale( 30, 30);

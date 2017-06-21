@@ -8,6 +8,7 @@ comment2.params=
 comment2.target=BuildingBlocks()
 comment3.params=h
 comment3.target=void\ setHealth(double)
+comment3.text=\r\n\ setHealth\ sts\ the\ Health\ of\ the\ block\ to\ a\ given\ value\r\n\ \r\n\ @param\ h\ is\ the\ given\ health\ of\ the\ building\ block\r\n\ \r\n
 comment4.params=damage
 comment4.target=void\ hit(double)
 numComments=5

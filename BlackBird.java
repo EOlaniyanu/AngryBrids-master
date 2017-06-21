@@ -9,7 +9,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BlackBird extends Birds
 {
     private GreenfootImage blackBird = new GreenfootImage("BlackBird.png");
-    public double DAMAGE = 50;
+    private double DAMAGE = 50;
+    
+    /**
+     * BlackBird sets the damage and image of the bird and scales it to the right size.
+     */
     public BlackBird()
     {
         blackBird.scale( 30, 30);

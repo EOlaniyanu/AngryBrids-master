@@ -26,6 +26,12 @@ public class BuildingBlocks extends Actor
         
     }
     
+    /**
+     * setHealth sts the Health of the block to a given value
+     * 
+     * @param h is the given health of the building block
+     * @return Nothing is returned
+     */
     public void setHealth( double h )
     {
         health = h;
