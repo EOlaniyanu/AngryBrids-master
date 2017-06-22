@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=BlackBird
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BlackBird\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=BlackBird()
+comment1.text=\r\n\ BlackBird\ sets\ the\ damage\ and\ image\ of\ the\ bird\ and\ scales\ it\ to\ the\ right\ size.\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ BlackBird\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3

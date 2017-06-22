@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Pig
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pig\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Pig()
+comment1.text=\r\n\ Pig's\ default\ parameter\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.params=king
+comment2.target=Pig(boolean)
+comment2.text=\r\n\ Pig\ sets\ the\ image\ of\ the\ pig\ object\ based\ on\ the\ boolean\ parameter\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ king\ tells\ the\ computer\ whether\ the\ image\ for\ the\ pig\ should\ be\ the\ king\ Image\ or\ the\ lackey\ Image\r\n\ @return\ Nothing\ is\ returned\r\n
+comment3.params=x\ y
+comment3.target=void\ setLocation(int,\ int)
+comment3.text=\r\n\ setLocation\ sets\ the\ location\ of\ the\ bird\ to\ the\ given\ parameters\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ x\ is\ the\ given\ x\ location\ of\ the\ bird\r\n\ @param\ y\ is\ the\ given\ y\ location\ of\ the\ bird\ \r\n\ @return\ Nothing\ is\ returned\r\n
+comment4.params=x\ y
+comment4.target=void\ setLocation(double,\ double)
+comment4.text=\r\n\ setLocation\ overides\ the\ setLocation\ of\ greenfoot\ to\ allow\ for\ the\ use\ of\ double\ values\ in\ the\ method\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ x\ is\ the\ given\ x\ location\ of\ the\ bird\r\n\ @param\ y\ is\ the\ given\ y\ location\ of\ the\ bird\ \r\n\ @return\ Nothing\ is\ returned\r\n
+comment5.params=
+comment5.target=void\ act()
+comment5.text=\r\n\ Act\ -\ do\ whatever\ the\ Pig\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment6.params=
+comment6.target=void\ fall()
+comment6.text=\r\n\ fall\ causes\ the\ Hero\ to\ fall\ when\ he\ jumps\ or\ moves\ up\r\n\ it\ uses\ a\ private\ modifier\ because\ it\ is\ only\ used\ in\ this\ class.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment7.params=damage
+comment7.target=void\ hit(double)
+comment7.text=\r\n\ hit\ reduces\ the\ health\ of\ the\ pig\ based\ on\ damage\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ damage\ is\ the\ amount\ which\ health\ will\ be\ changed\ by.\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=8

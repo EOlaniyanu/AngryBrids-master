@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Smoke
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Smoke\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Smoke()
+comment1.text=\r\n\ PigSmoke's\ default\ parameter\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Smoke\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ poof()
+comment3.text=\r\n\ poof\ makes\ an\ animation\ of\ the\ given\ object\ turning\ into\ smoke\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\ \r\n
+numComments=4

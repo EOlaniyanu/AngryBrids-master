@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=BuildingBlocks
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ BuildingBlocks\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=BuildingBlocks()
+comment1.text=\r\n\ BuildingBlocks\ default\ parameter\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ BuildingBlocks\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=h
+comment3.target=void\ setHealth(double)
+comment3.text=\r\n\ setHealth\ sts\ the\ Health\ of\ the\ block\ to\ a\ given\ value\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ h\ is\ the\ given\ health\ of\ the\ building\ block\r\n\ @return\ Nothing\ is\ returned\r\n
+comment4.params=damage
+comment4.target=void\ hit(double)
+comment4.text=\r\n\ hit\ reduces\ the\ health\ of\ the\ buildingblock\ based\ on\ damage\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ damage\ is\ the\ amount\ whichh\ health\ will\ be\ changed\ by\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=5

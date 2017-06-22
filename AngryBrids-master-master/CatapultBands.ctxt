@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=CatapultBands
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CatapultBands\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=CatapultBands()
+comment1.text=\r\n\ CatapultBands\ sets\ the\ Image\ for\ the\ elastic\ bands\ on\ the\ catapult\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @eturn\ Nothing\ is\ returned\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ CatapultBands\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ updateElastic()
+comment3.text=\r\n\ updateElastic\ changes\ the\ rotation\ length\ and\ location\ of\ the\ elastic\ as\ needed\r\n\ it\ uses\ a\ private\ modifier\ because\ it\ is\ only\ used\ in\ this\ class.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment4.params=
+comment4.target=void\ calcSpeed()
+comment4.text=\r\n\ calcSpeed\ calculate\ the\ x\ and\ y\ velocity\ of\ the\ bird\ based\ on\ the\ diference\ in\ x\ values\ \r\n\ and\ y\ values\ of\ the\ mouse\ and\ the\ top\ of\ catapult.\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\ \r\n\ @return\ Nothing\ is\ returned\r\n
+comment5.params=
+comment5.target=double\ getVelX()
+comment5.text=\r\n\ getVelX\ returns\ the\ birds\ velocity\ in\ the\ x\ direction\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ return\ velX\ the\ birds\ velocity\ in\ the\ x\ direction\ is\ returned\r\n
+comment6.params=
+comment6.target=double\ getVelY()
+comment6.text=\r\n\ getVelY\ returns\ the\ birds\ velocity\ in\ the\ y\ direction\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ return\ velY\ the\ birds\ velocity\ in\ the\ y\ direction\ is\ returned\r\n
+numComments=7

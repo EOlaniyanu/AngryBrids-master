@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Wood
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Wood\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Wood()
+comment1.text=\r\n\ Wood's\ default\ parameter\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+comment2.params=img
+comment2.target=Wood(boolean)
+comment2.text=\r\n\ This\ constructor\ sets\ an\ Image\ array\ and\ health\ to\ every\ wood\ object\ based\ on\ the\ type\ of\ object\ \r\n\ it\ is\ set\ to\ be.\r\n\ This\ uses\ a\ public\ modifier\ because\ it\ has\ to\ interact\ with\ other\ classes\r\n\ \r\n\ @param\ img\ tells\ us\ which\ type\ of\ block\ the\ wood\ object\ is.\r\n\ @return\ Nothing\ is\ returned\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ Wood\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment4.params=
+comment4.target=void\ checkHealth()
+comment4.text=\r\n\ checkHealth\ checks\ the\ health\ of\ the\ wood\ object\ and\ responds\ accordingly\r\n\ it\ uses\ a\ private\ modifier\ because\ it\ is\ only\ used\ in\ this\ class.\r\n\ \r\n\ @param\ There\ are\ no\ parameters\r\n\ @return\ Nothing\ is\ returned\r\n
+numComments=5
